@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "71c71f2e-cf14-4230-8127-7b06caf59ce1": {
+      "ProjectGuid": "71c71f2e-cf14-4230-8127-7b06caf59ce1",
+      "DisplayName": "PlatformService",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
