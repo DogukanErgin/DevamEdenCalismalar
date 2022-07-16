@@ -8,6 +8,11 @@ import {MatButtonModule} from '@angular/material/button';
 import { CardItemComponent } from './card-item/card-item.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import { CardModalComponent } from './card-modal/card-modal.component';
+import {MatInputModule} from '@angular/material/input';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { MatIconModule } from '@angular/material/icon';
+
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 
 @NgModule({
@@ -21,7 +26,12 @@ import { CardModalComponent } from './card-modal/card-modal.component';
     CardsRoutingModule,
     MatCardModule,
     MatButtonModule,
-    MatDialogModule
+    MatDialogModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatIconModule,
+    MatProgressBarModule
   ]
 })
 export class CardsModule { }

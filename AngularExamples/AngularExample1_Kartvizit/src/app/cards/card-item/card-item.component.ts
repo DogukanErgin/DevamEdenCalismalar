@@ -1,5 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { Card } from 'src/app/models/card';
+import { CardModalComponent } from '../card-modal/card-modal.component';
 
 @Component({
   selector: 'app-card-item',
@@ -8,10 +10,23 @@ import { Card } from 'src/app/models/card';
 })
 export class CardItemComponent implements OnInit {
 
+
   @Input() cardData!:Card; //başlangıçta bir değer istediği için ünlemsiz şekilde eklersek hata verir ünlem boş olabilir anlamına gelmekte
-  constructor() { }
+
+
+  
+  constructor(
+private dialog:MatDialog
+
+  ) { }
 
   ngOnInit(): void {
-  }
+  } 
 
+  openUpdateCardModal(card:Card):void{
+this.dialog.open(CardModalComponent,{
+  width:'400px',
+  data:card
+});
+  }
 }

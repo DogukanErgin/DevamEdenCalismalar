@@ -13,3 +13,12 @@ main{
 .page-description{
     color:#777;
 }}
+
+.mat-snack-bar-container{
+    &.succes{
+        background-color: aquamarine;
+    }
+    &.error{
+        background-color: red;
+    }
+}
