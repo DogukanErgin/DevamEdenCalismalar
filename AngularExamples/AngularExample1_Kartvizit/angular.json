@@ -27,6 +27,7 @@
               "src/favicon.ico",
               "src/assets"
             ],
+       
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "./node_modules/bootstrap/dist/css/bootstrap.css",
@@ -71,6 +72,9 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "proxyConfig": "proxy.conf.json"
+          },
           "configurations": {
             "production": {
               "browserTarget": "AngularExample1_Kartvizit:build:production"
@@ -84,7 +88,9 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "AngularExample1_Kartvizit:build"
+            "browserTarget": "AngularExample1_Kartvizit:build",
+            
+
           }
         },
         "test": {

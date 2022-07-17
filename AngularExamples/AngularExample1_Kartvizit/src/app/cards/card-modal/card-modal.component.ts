@@ -13,10 +13,10 @@ import { SnackbarService } from 'src/app/services/snackbar.service';
 })
 export class CardModalComponent implements OnInit {
 
-  cardForm!:FormGroup
+  cardForm!:FormGroup;
   emailFormControl = new FormControl('', [Validators.required, Validators.email]);
   value='clear me';
-showSpinner: boolean=false
+showSpinner: boolean=false;
 
 
 
@@ -33,20 +33,23 @@ showSpinner: boolean=false
     ) {   }
 
   ngOnInit(): void {
+    console.log(this.data);
+
   this.cardForm=this.fb.group({
     name:[this.data?.name||''],
     title:[this.data?.title||'',Validators.required],
     phone:[this.data?.phone||'',Validators.required],
     email:[this.data?.email||'',Validators.email],
     address:[this.data?.address||'',],
-  })
+  });
+
   }
 showcards(): void{
  console.log(this.cardForm.value); 
 
 }
 addCard():void{
-  
+  console.log(this.cardForm.value);
   this.showSpinner=true;
   this.cardService.addCard(this.cardForm.value).subscribe((res:any)=>
   {
@@ -55,8 +58,6 @@ this.getSucces(res|| 'Kartvizit başarıyla eklendi');
     this.getError(err|| 'Bilinmeyen bir hata alındı');
       });
      
-    
-
 }
 
 updateCard():void{

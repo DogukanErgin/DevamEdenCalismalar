@@ -40,12 +40,12 @@
 </form>
 <div mat-dialog-actions align="end">
   <div class="flex-grow-1 text-start" *ngIf="data">
-    <button mat-stroked-button color="warn" (click)="deleteCard"  [disabled]=" showSpinner==true">Sil</button>
+    <button mat-stroked-button color="warn" (click)="deleteCard()"  [disabled]=" showSpinner==true">Sil</button>
   </div>
   
   <div>
     <button mat-button mat-dialog-close>Vazgeç</button>
-    <button mat-flat-button color="primary" mat-dialog-close cdkFocusInitial  (click)="data ? updateCard():addCard()"  [disabled]="cardForm.invalid || showSpinner==true">{{data ? 'Güncelle' : 'Ekle'}}</button>
+    <button mat-flat-button color="primary" mat-dialog-close  (click)="data ? updateCard():addCard()"  [disabled]="cardForm.invalid || showSpinner==true">{{data ? 'Güncelle' : 'Ekle'}}</button>
     
    </div>
   

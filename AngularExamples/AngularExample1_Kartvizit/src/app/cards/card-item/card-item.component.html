@@ -4,18 +4,20 @@
       <mat-card-title *ngIf="">{{cardData.name}}</mat-card-title>
       <mat-card-subtitle>{{cardData.title}}</mat-card-subtitle>
     </mat-card-header>
-    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+    <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
     <mat-card-content>
         <ul class="list-group list-group-flush">
+          <li class="list-group-item">{{cardData.name}}</li>
             <li class="list-group-item">{{cardData.phone}}</li>
-            <li class="list-group-item" *ngIf="cardData.email;else NoEmail">{{cardData.email}}</li>
             <li class="list-group-item">
               <span *ngIf="cardData.address">{{cardData.address}}</span>
-                 <small *ngIf="!cardData.address">adres girilmemiş</small></li>
+                 <small *ngIf="!cardData.address">adres girilmemiş</small> </li>
+                 <li class="list-group-item">
+                  <span *ngIf="cardData.email">{{cardData.email}}</span>
+                     <small *ngIf="!cardData.email">e posta adresi girilmemiş</small> </li>
+            
           </ul>
-          <ng-template #NoEmail>
-            <small class="nocontent"> e posta adresi girilmemiş</small>
-          </ng-template>
+          
     </mat-card-content>
  
   </mat-card>

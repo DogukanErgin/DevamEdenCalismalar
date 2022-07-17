@@ -25,7 +25,7 @@ getCards(): void {
     return this.http.post(this.apiUrl+'/cards',card)
   }
   updateCard(card:Card,cardId:number): Observable<any>{
-    return this.http.put(this.apiUrl+'/cards'+cardId,card)
+    return this.http.put(this.apiUrl+'/cards/'+cardId,card)
   }
   deleteCard(cardId:number): Observable<any>{
     return this.http.delete(this.apiUrl+'/cards/'+cardId);
