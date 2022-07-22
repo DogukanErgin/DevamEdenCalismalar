@@ -1,6 +1,0 @@
-{
-    "/api": {
-    "target": "http://demo.limantech.com",
-    "secure": false
-    }
-    }
