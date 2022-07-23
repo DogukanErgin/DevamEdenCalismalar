@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nisi9B54dk5VAWE78UvmRLGtiu7KqAJAQOTcKIR6ksxHZUbmPAHyK2uhjwOeqXY4K0kAwhOEaCb2mD0tQvaviA==",
+  "dgSpecHash": "V/qOtaTCgRSH3RdNwTjm2aHADjFLGSBUvszoTFj4tVB1SXB9FOOa0j6SYTZjE1dksdxr23cGotlE+ZYt19OpTQ==",
   "success": true,
-  "projectFilePath": "D:\\yazılım\\ETicaret\\ETicaretAPI\\Infrastructure\\ETicaretAPI.Persistent\\ETicaretAPI.Persistent.csproj",
+  "projectFilePath": "D:\\yazılım\\ETicaret\\ETicaretAPI\\Infrastructure\\ETicaretAPI.Persistent\\ETicaretAPI.Persistence.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ergin\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Ergin\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.6\\microsoft.entityframeworkcore.6.0.6.nupkg.sha512",

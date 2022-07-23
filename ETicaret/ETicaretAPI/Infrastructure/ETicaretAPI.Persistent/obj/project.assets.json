@@ -2764,9 +2764,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\yazılım\\ETicaret\\ETicaretAPI\\Infrastructure\\ETicaretAPI.Persistent\\ETicaretAPI.Persistent.csproj",
-      "projectName": "ETicaretAPI.Persistent",
-      "projectPath": "D:\\yazılım\\ETicaret\\ETicaretAPI\\Infrastructure\\ETicaretAPI.Persistent\\ETicaretAPI.Persistent.csproj",
+      "projectUniqueName": "D:\\yazılım\\ETicaret\\ETicaretAPI\\Infrastructure\\ETicaretAPI.Persistent\\ETicaretAPI.Persistence.csproj",
+      "projectName": "ETicaretAPI.Persistence",
+      "projectPath": "D:\\yazılım\\ETicaret\\ETicaretAPI\\Infrastructure\\ETicaretAPI.Persistent\\ETicaretAPI.Persistence.csproj",
       "packagesPath": "C:\\Users\\Ergin\\.nuget\\packages\\",
       "outputPath": "D:\\yazılım\\ETicaret\\ETicaretAPI\\Infrastructure\\ETicaretAPI.Persistent\\obj\\",
       "projectStyle": "PackageReference",
@@ -2847,7 +2847,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

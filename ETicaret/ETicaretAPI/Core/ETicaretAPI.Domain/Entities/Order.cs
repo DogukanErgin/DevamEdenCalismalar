@@ -17,3 +17,4 @@ namespace ETicaretAPI.Domain.Entities
         public Customer Customer { get; set; }
     }
 }
+ 
