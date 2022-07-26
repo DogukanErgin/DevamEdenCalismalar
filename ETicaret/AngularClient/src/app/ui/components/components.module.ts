@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ProductsModule } from './products/products.module';
 import { BasketsModule } from './baskets/baskets.module';
 import { HomeModule } from './home/home.module';
+import { ProductsComponent } from './products/products.component';
 
 
 
@@ -12,9 +13,15 @@ import { HomeModule } from './home/home.module';
   ],
   imports: [
     CommonModule,
-    ProductsModule,
     BasketsModule,
+    ProductsModule,
     HomeModule
+    
+
+  ], exports:[
+  
+
+  
   ]
 })
 export class ComponentsModule { }

@@ -1,20 +1,26 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ProductsModule } from './products/products.module';
-import { OrderModule } from './order/order.module';
-import { DashboardModule } from './dashboard/dashboard.module';
 import { CustomerModule } from './customer/customer.module';
+import { DashboardModule } from './dashboard/dashboard.module';
+import { OrderModule } from './order/order.module';
+import { ProductsModule } from './products/products.module';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+   
+  ],
   imports: [
-    CommonModule,
-    ProductsModule,
-    OrderModule,
-    DashboardModule,
-    CustomerModule
+   CommonModule,
+ CustomerModule,
+ DashboardModule,
+ OrderModule,
+ ProductsModule
+
+  
+  ],exports:[
+
   ]
 })
 export class ComponentsModule { }
